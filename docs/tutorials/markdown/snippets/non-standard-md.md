@@ -1,0 +1,2 @@
+:exclamation: *Some of the features listed below are not standard and require additional configuration*{style="color: grey"}    
+:bulb: *All features will work in MkDocs-Workspace (completely free and open-source)*{style="color: green"}

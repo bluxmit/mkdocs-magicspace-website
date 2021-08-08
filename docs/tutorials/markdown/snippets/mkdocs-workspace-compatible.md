@@ -1,0 +1,1 @@
+:bulb: *All features will work in MkDocs-Workspace (completely free and open-source)*{style="color: green"}
