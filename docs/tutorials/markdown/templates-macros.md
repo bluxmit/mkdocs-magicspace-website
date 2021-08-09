@@ -10,8 +10,8 @@ You can use Jinja2 templates in your documentation mixing it with Markdown in th
 Typical cases for using templates are:
 
 - generate dynamic content 
-- avoid repetative markdown code
-- render different markdown code depending on condition
+- avoid repetative Markdown code
+- render different Markdown code depending on condition
 
 Templates code is wrapped with one of the following notations
 
@@ -25,7 +25,7 @@ templates application are displayed.
 ### Variables
 
 Set variable is as simple as ```{% raw %} {% set my_variable = "Variable inside the emplate" %} {% endraw %}```. 
-In order to outpu the variable add this piece to your markdown ```{% raw %} {{my_variable}} {% endraw %}```.
+In order to outpu the variable add this piece to your Markdown ```{% raw %} {{my_variable}} {% endraw %}```.
 
 !!! example "Variables"
     === "Output"
@@ -154,7 +154,7 @@ The syntaxis of the loop looks like this
 {% endraw %}
 ```
 
-Loops are very handy to avoid markdown code duplication and generate templates dynamically from data. The following example creates table 
+Loops are very handy to avoid Markdown code duplication and generate templates dynamically from data. The following example creates table 
 from the dictionary
 
 === "Output"

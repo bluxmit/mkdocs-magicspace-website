@@ -1,8 +1,9 @@
 ## Emoji and Icons
 
-Make your docs look classy and fun to read by using beautiful icons and emoji. There are thousands of them, and youwill always find what you need.
+Make your docs look classy and fun to read by using beautiful icons and emoji. There are thousands of them, and you will always find 
+what you need.
 
-Yo can include emoji in your tmarkdown ext using special words. 
+Yo can include emoji in your markdown text using special words. 
 For example, simply adding ```:smile:``` right to the markdown text, will make this smily face :smile: show up
 
 There are lots of emoji (thousand) available out of the box

@@ -8,6 +8,8 @@ outputs :point_down:
 
 > In order to understand recursion, one must first understand recursion.
 
+Of course, you can write multiple lines in the blockquote
+
 !!! example "Multiline Blockquote - option 1"
     === "Output"
         > Measuring programming progress by lines of code is like measuring aircraft building progress by weight    
@@ -19,7 +21,7 @@ outputs :point_down:
         > **Bill Gates (co-founder of Microsoft)**
         ````
 
-Starting every new line with ```>``` can be cumbersome, especially if you nneed to make line breaks
+Starting every new line with ```>``` can be cumbersome, especially if you need to make line breaks
 
 !!! example "Multiline Blockquote option 2"
     === "Output"
@@ -167,7 +169,7 @@ Using tabs inside Admonitions can be handy
 
 ### Admonition types
 
-There are numerous Admonition types that you can use to  make important things stand out. 
+There are numerous Admonition types that you can use to make important text stand out. 
 Every Admonition starts with the type keyword following  after !!! or ??? For example, Admonition of **info** type
 ```
 !!! info 

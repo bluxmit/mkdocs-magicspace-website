@@ -1,4 +1,4 @@
-Mermaid allows to use text syntaxis to create diagrams. Thus Mermaid diagrams can be part 
+Mermaid allows using text syntaxis to create diagrams. Thus Mermaid diagrams can be part 
 of Markdown documentation and have all the benefits of version control or can even be auto-generated using jinja2 templates.
 
 !!! warning 

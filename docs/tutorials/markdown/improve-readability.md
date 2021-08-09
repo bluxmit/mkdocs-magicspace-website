@@ -1,6 +1,6 @@
 ## Tabs
 
-Tabs come handy if you want to create concise documentation. 
+Tabs come in handy if you want to create concise documentation. 
 
 ***Pros and Cons of the Internet:***
 === "Pros"
@@ -58,7 +58,7 @@ Create tabs by using `===` together with the tab name
 
 ## Lists
 
-Ordered and unordered lists are standard Mardown features. Extended markdown adds definition and task lists.
+Ordered and unordered lists are standard Mardown features. Extended markdown adds ***definition lists*** and ***task lists***.
 
 !!! example "Unordered list"
     === "Output"
@@ -162,7 +162,7 @@ Ordered and unordered lists are standard Mardown features. Extended markdown add
 ## Footnotes
 
 Footnotes are great to focus on what is important for the reader, clarifying details down below. 
-See example of a text with footnotes (and markdown). 
+See an example of a text with footnotes (and markdown). 
 
 !!! example "Tasklist"
     === "Output"

@@ -17,7 +17,7 @@ The first - is to create pretty tabbed table using symbols ```|``` and ```-```
         | `DELETE`    | :material-close:     Delete resource |
         ```
 
-The more convenient way is to separate columns only by ```|```
+But the more convenient way is to separate columns with ```|```
 
 !!! example "More convenient table syntaxis"
     === "Output"

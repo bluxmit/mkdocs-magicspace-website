@@ -1,16 +1,15 @@
 --8<-- "docs/tutorials/markdown/snippets/remove-toc.md"
 
 !!! info
-    **In most cases you will not use the features described in this section, and you can skip it.   
-    This section was added to demonstrate that you will not be not limited by standard or even Extended 
-    Markdown.** 
+    **In most cases, you will not use the features described in this section, and you can skip them. 
+    This section was added to demonstrate that you will be not limited by standard or even Extended Markdown.** 
     
-    **If you stumble upon the limitations of Markdown, you can use raw HTML, CSS and even Javascript directly in your 
-    Markdown documents, greatly extending its functionality.**
+    **If you stumble upon the limitations of Markdown, you can use raw HTML, CSS, and even Javascript directly 
+    in your Markdown documents, greatly extending its functionality.**
 
-    **This section might convince you that Markdown (using MkDocs-Workspace) is the right choice to start. Because even 
-    if you hit the limitations of the extended Markdown some time in future, you will be able to solve it without the need 
-    to remake everything using another technology**{style="color: red"} 
+    **This section might convince you that Markdown (using MkDocs-MagicSpace) is the right choice to start. 
+    Because even if you hit the limitations of the extended Markdown sometime in the future, you will be able 
+    to solve it without the need to remake everything using another technology**{style="color: red"} 
 
 ## Attribute lists
 The [Attribute Lists](https://python-markdown.github.io/extensions/attr_list/) adds the ability to apply CSS styles to Markdown elemennts. 
@@ -31,14 +30,14 @@ For example, text customized using attribute list :point_down:
         ```{style="background-color: black; color: white"}
         ````
 
-If you are using MkDocs-Workspace, MkDocs material theme is set up and you can style a link to another website to look like a button with Material design. 
+If you are using MkDocs-MagicSpace, MkDocs material theme is set up and you can style a link to another website to look like a button with Material design. 
 You just need to list classes that should be applied to the link :point_down:
 !!! example "Style link as button"
     === "Output"
-        [Visit our Github page :fontawesome-brands-github-alt:](https://github.com/Alnoda/workspace-in-docker){ .md-button .md-button--primary }
+        [Visit our Github page :fontawesome-brands-github-alt:](https://github.com/bluxmit/alnoda-workspaces){ .md-button .md-button--primary }
     === "Markdown"
         ```
-        [Visit our Github page :fontawesome-brands-github-alt:](https://github.com/Alnoda/workspace-in-docker){ .md-button .md-button--primary }
+        [Visit our Github page :fontawesome-brands-github-alt:](hhttps://github.com/bluxmit/alnoda-workspaces){ .md-button .md-button--primary }
         ```
 
 ## HTML & CSS inside Markdown
@@ -59,7 +58,7 @@ Now we can style the text as much as we want :point_down:
 A good idea is to combine HTML + CSS with Attribut lists. You can define CSS for some class in the ```<style>``` tag, and apply it many 
 times to different obbjects. 
 
---8<-- "docs/docs/markdown/snippets/pumping-heart.md"
+--8<-- "docs/tutorials/markdown/snippets/pumping-heart.md"
 
 !!! hint "Animated icon"
     === "Output"
@@ -67,7 +66,7 @@ times to different obbjects.
     
     === "Markdown"
         ```
-        --8<-- "docs/docs/markdown/snippets/pumping-heart.md"
+        --8<-- "docs/tutorials/markdown/snippets/pumping-heart.md"
 
         :octicons-heart-fill-24:{ .heart }  :octicons-heart-fill-24:{ .heart }  :octicons-heart-fill-24:{ .heart }
         ```
@@ -109,12 +108,12 @@ You can find more information about Markdown within HTML [in this document](http
 
 ## Modify MkDocs pages
 
-You can use CSS to modify any MkDocs document page, for example remove components you don't like. 
-For example, the Table of Content (TOC) you can see on some other pages was removed from this page 
+You can use CSS to modify any MkDocs document page, for example, remove components you don't like. 
+For instance, the Table of Content (TOC), which you can see on other pages was, removed from this page 
 by adding the following snippet of code directly to the Markdown :point_down:
 
 ```html
---8<-- "docs/docs/markdown/snippets/remove-toc.md"
+--8<-- "docs/tutorials/markdown/snippets/remove-toc.md"
 ```
 
 !!! hint 
@@ -132,9 +131,9 @@ by adding the following snippet of code directly to the Markdown :point_down:
 
 Finally, you can include very sophisticated HTML, CSS and even Javascript code inside your Markdown documents 
 
---8<-- "docs/docs/markdown/snippets/concierge.md"
+--8<-- "docs/tutorials/markdown/snippets/concierge.md"
 
 ??? example "Show the code"
     ```
-    --8<-- "docs/docs/markdown/snippets/concierge.md"
+    --8<-- "docs/tutorials/markdown/snippets/concierge.md"
     ```

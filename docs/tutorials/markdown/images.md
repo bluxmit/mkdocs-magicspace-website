@@ -3,8 +3,8 @@ hide:
   - toc
 ---
 
-Standard Markdown allows to add images to the page, the syntaxis looks similat to the one of a link.   
-Both external and local images can be added to the Markdown page
+Standard Markdown allows the addition of images to the page.
+ Both local images, and images from the Internet can be displayed on the Markdown pages
 
 !!! example "Hide the pain Harold"
     === "Output"   
