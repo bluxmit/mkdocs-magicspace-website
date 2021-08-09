@@ -131,6 +131,8 @@ nav:
         - Use templates: tutorials/markdown/templates-macros.md 
       - Extra features:
         - Include docs from other repositories: tutorials/extra-features/include.md 
+        - Get website online: tutorials/extra-features/production.md
+
           
  
 
