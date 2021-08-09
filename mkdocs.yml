@@ -1,6 +1,6 @@
-site_name: Alnoda workspaces
-site_url: https://github.com/Alnoda/workspace-in-docker
-repo_url: https://github.com/Alnoda/workspaces-in-docker
+site_name: MkDocs MagicSpace
+site_url: https://github.com/bluxmit/alnoda-workspaces
+repo_url: https://github.com/bluxmit/alnoda-workspaces
 edit_uri: ""
 
 theme:
@@ -32,7 +32,7 @@ theme:
 
 extra:
   # Link to go when logo clicked
-  homepage: https://github.com/Alnoda/workspaces-in-docker
+  homepage: https://github.com/bluxmit/alnoda-workspaces
   host_url: http://localhost
 
 plugins:
@@ -111,7 +111,7 @@ nav:
       - Intro: about/intro.md
       - Motivation: about/motivation.md
       - Features: about/features.md
-      - Showcase: alnoda-workspaces/workspaces/mkdocs-magicspace/mkdocs/showcase.md
+      - Showcase: mkdocs-magicspace/mkdocs/showcase.md
   - Docs: docs.md
   - Tutorials:
       - Get started: tutorials/get-started.md

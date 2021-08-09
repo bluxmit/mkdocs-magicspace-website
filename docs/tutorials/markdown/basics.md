@@ -59,13 +59,12 @@ You can add emphasis by making text bold, italic, strikethrough or combine them 
 :point_right: Markdown is designed to create readable documents, and features that hurt readability do not have standard Markdown syntaxis. 
 For example, font size or text color. 
 
-Despite lacking Markdown features, 
-it is stil very easy to this. Read how it can be done in the next section - [Hack the Markdown](hack-markdown.md) 
+Despite this is not a standard Markdown feature, it is not hard to change the fonts and colors. 
+Read how it can be done in the next section - [Hack the Markdown](hack-markdown.md) 
 
 ## Rules
 
 To create a horizontal rule, use three or more asterisks ```***```, dashes ```---```, or underscores ```___``` on a line by themselves.  
-The result looks the same.
 
 !!! example "Rules"
     === "Output"
@@ -135,5 +134,27 @@ If the doc you want to link is in the same folder, just use its name
         - [Improve readability with tabs, lists and footnotes](improve-readability.md)   
         ```
 
+And you can make links to the sections of the same markdown file, or any other markdown file  
+
+!!! example "Links betweenn markdown documents"
+    === "Output"
+        Link a paragraph in this doc  
+
+        [Emphasize text](#emphasize-text)   
+
+        Link to a paragraph in the other doc 
+
+        [Sequence diagram](diagrams.md#sequence-diagram)
+        
+    === "Markdown"
+        ```
+        Link a paragraph in this doc  
+
+        [Emphasize text](#emphasize-text)   
+
+        Link to a paragraph in the other doc 
+
+        [Sequence diagram](diagrams.md#sequence-diagram)  
+        ```
 
 

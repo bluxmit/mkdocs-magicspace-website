@@ -1,6 +1,6 @@
 ## Theme and colors 
 
-You can customize how your docummentation website looks, inncluding fonts, colors and even complete themes.  
+You can customize how your documentation website looks, including fonts, colors and even complete themes.  
 
 !!! info "MkDocs themes" 
     [MkDocs has many themes](https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes). The default boilerplate theme 

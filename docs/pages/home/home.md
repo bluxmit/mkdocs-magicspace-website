@@ -74,7 +74,7 @@
 </div>
 <div class="features" markdown="block">
 
-- [X] All-in-one tool to develop and deploy documentation website
+- [X] All-in-one tool to develop and deploy documentation websites
 - [X] Completely free and open-source
 - [X] Designed to make collaboration easy
 - [X] Use the full set of extended markdown features
@@ -144,7 +144,7 @@ docker run --name project-1 -d -p 8020-8030:8020-8030 alnoda/mkdocs-magicspace
             Professional documentation websites
         </div>
         <div class="usecase-description">
-            Create documentation website for your project, that looks very professional, has built-in search, customizable, searchable, mobile-friendly and has 40+ languages
+            Create a documentation website for your project, that looks very professional, has built-in search, is customizable, searchable, mobile-friendly, and has 40+ languages
         </div>
     </div>
 
@@ -156,8 +156,7 @@ docker run --name project-1 -d -p 8020-8030:8020-8030 alnoda/mkdocs-magicspace
             Unified docs from multiple Git repositories
         </div>
         <div class="usecase-description">
-            Combine .md files from multiple Git repos into one documentation website with powerful search capabilities.
-            Add code autodocumentation, display swagger files and jupyter notebooks.
+            Combine markdown files from multiple Git repositories into one documentation website with powerful search capabilities
         </div>
     </div>
 </div>
@@ -209,28 +208,28 @@ docker run --name project-1 -d -p 8020-8030:8020-8030 alnoda/mkdocs-magicspace
             "env": "VSCODE_URL",
             "name": "VS-code IDE",
             "image": "IDE.png",
-            "description": "Develop code usinng customizable full-fledged IDE with multiple VS-code extensions and color themes installed and configured",
+            "description": "Browser-based version of Visual Studio Code. Develop in any language, install hundreeds of extensions",
             "local_port": "3000"
         },
         {
             "env": "FILEBROWSER_URL",
             "name": "File Browser",
             "image": "Filebrowser.png",
-            "description": "Browse files inside running docker container. Upload and download files and folders to and from your Workspace, no matter where your Workspace is running: on local or in cloud",
+            "description": "Browse, upload and download files and folders to and from the Workspace",
             "local_port": "8092"
         },
         {
             "env": "CRONICLE_URL",
             "name": "Cronicle",
             "image": "Cronicle.png",
-            "description": "Schedule jobs, tasks and bacground scripts. Powerful tool to manage schedules, observe and monitor executions.",
+            "description": "Schedule jobs, manage schedules, observe and monitor executions of tasks",
             "local_port": "3012"
         },
         {
             "env": "UNGIT_URL",
             "name": "Ungit",
             "image": "Ungit.png",
-            "description": "Manage Git repositories and work flow using beautiful UI",
+            "description": "Manage Git repositories and workflows using beautiful UI",
             "local_port": "8448"
         },
         {
@@ -238,6 +237,13 @@ docker run --name project-1 -d -p 8020-8030:8020-8030 alnoda/mkdocs-magicspace
             "name": "Static File Server",
             "image": "Static-server.png",
             "description": "Serve any static websites like a breeze",
+            "local_port": "9992"
+        },
+        {
+            "env": "TERMINAL_URL",
+            "name": "Terminal",
+            "image": "terminal-big.png",
+            "description": "Full-fledged browser-based terminal with Z-shell",
             "local_port": "9992"
         }
         ] 
@@ -254,12 +260,17 @@ docker run --name project-1 -d -p 8020-8030:8020-8030 alnoda/mkdocs-magicspace
         {% set tool_url = "http://localhost"+":"+tool.local_port %}
     {% endif %}
     <div>
+        <!--
         <a href="{{ tool_url }}" target="_blank" rel="noopener noreferrer">
             <img src="{{ tool.image }}" class="tool-img"/>
         </a>
         <a href="{{ tool_url }}">
             <div class="tool-caption">{{ tool.name }}</div>
         </a>
+        <div class="tool-description">{{ tool.description }}</div>
+        -->
+        <img src="{{ tool.image }}" class="tool-img"/>
+        <div class="tool-caption">{{ tool.name }}</div>
         <div class="tool-description">{{ tool.description }}</div>
     </div>
   {% endfor %}
@@ -320,49 +331,49 @@ docker run --name project-1 -d -p 8020-8030:8020-8030 alnoda/mkdocs-magicspace
     <div class="accent-element" >
         <img src="programming.svg" class="accent-img">
         <div class="accent-description">
-            Isolate projects in their own dockerized environments, work directly inside the running docker containers and manage numerous projects easily.
+            Isolate projects in their dockerized environments, work directly inside the running docker containers, and manage numerous projects easily
         </div>
     </div>
     <div class="accent-element" >
         <img src="nature-coding.svg" class="accent-img">
         <div class="accent-description">
-            Move entire workspaces between machines and cloud servers with just couple commands. Work on your laptop, home PC, cloud server or even tablet whenever you want.  
+            Move entire workspaces between machines and cloud servers with just a couple of commands. Work on your laptop, home PC, cloud server, or even tablet whenever you want  
         </div>
     </div>
     <div class="accent-element" >
         <img src="shared-workspace.svg" class="accent-img">
         <div class="accent-description">
-            Share entire workspace with all dependencies with your peer. Or move workspace to cloud server and use it together.
+            Share the entire workspace with all dependencies with your peers. Or launch a workspace on a cloud server and work together online
         </div>
     </div>
     <div class="accent-element" >
         <img src="version-control.svg" class="accent-img">
         <div class="accent-description">
-            Version control not only for the code, but for your entire workspace with all the files and configurations. Save workspace that works.
+            Version control not only for the code but for your entire workspace with all the files and configurations. Save workspace that works
         </div>
     </div>
     <div class="accent-element" >
         <img src="design-components.svg" class="accent-img">
         <div class="accent-description">
-            Much more than just IDE. All the needed tools, packages, extensions are set up and configured. Workspace is fully ready to serve the goal.
+            Much more than just an IDE. All the needed tools, packages, extensions are set up and configured. Workspace is fully ready to serve the goal
         </div>
     </div>
     <div class="accent-element" >
         <img src="data-processing.svg" class="accent-img">
         <div class="accent-description">
-            Great for both development and productionalisation. No additional steps needed. Just move the same workspace to the cloud, and use it in production.
+            Great for both development and production. No additional steps are needed. Just move the same workspace to the cloud, and use it as a runtime environment
         </div>
     </div>
     <div class="accent-element" >
         <img src="add-color.svg" class="accent-img">
         <div class="accent-description">
-            Isolate experiments from the main environment. Trying out new thigns without risking to affect your primary workspace.
+            Isolate experiments from the main environment. Trying out new things without affecting your primary workspace
         </div>
     </div>
     <div class="accent-element" >
         <img src="feeling-proud.svg" class="accent-img">
         <div class="accent-description">
-            Tunable, expandable and customizable. Configure your own professioal workspace with all the things you need, and reuse it in many different projects.
+            Tunable, expandable, and customizable. Configure your own professional workspace with all the things you need, and reuse it in many different projects
         </div>
     </div>
 </div>

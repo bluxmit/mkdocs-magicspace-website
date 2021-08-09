@@ -1,12 +1,7 @@
-This is a collection of short tutorials that explain how to use extended markdown features
-in order to create gorgeous static websites, focusing on documentation websites.
+This is a collection of short tutorials that explain how to use extended markdown features to create gorgeous static websites, focusing on documentation websites.
 
---8<-- "docs/docs/markdown/snippets/standard-md.md"
+--8<-- "docs/tutorials/markdown/snippets/standard-md.md"
 
-Make sure you have MkDocs Workspace up and running before starting the tutorial. 
+Make sure you have MkDocs-MagicSpace up and running before starting the tutorial.
 
-[Launch MkDocs Workspace :rocket:](../workspace/quickstart.md){ .md-button .md-button--primary }
-
-
-
-
+[Launch MkDocs-MagicSpace :rocket:](../../docs.md){ .md-button .md-button--primary }

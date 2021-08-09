@@ -1,4 +1,3 @@
---8<-- "docs/tutorials/markdown/snippets/non-standard-md.md"
 --8<-- "docs/tutorials/markdown/snippets/remove-toc.md"
 
 !!! info
