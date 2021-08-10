@@ -1,0 +1,983 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://github.com/bluxmit/alnoda-workspaces/mkdocs-magicspace/" rel="canonical"/>
+<link href="../assets/favicon.ico" rel="icon"/>
+<meta content="mkdocs-1.2.1, mkdocs-material-7.1.9" name="generator"/>
+<title>MkDocs-MagicSpace - MkDocs MagicSpace</title>
+<link href="../assets/stylesheets/main.ca7ac06f.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.f1a3b89f.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+</head>
+<body data-md-color-accent="orange" data-md-color-primary="black" data-md-color-scheme="default" dir="ltr">
+<script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+<script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#mkdocs-magicspace">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="MkDocs MagicSpace" class="md-header__button md-logo" data-md-component="logo" href="https://github.com/bluxmit/alnoda-workspaces" title="MkDocs MagicSpace">
+<img alt="logo" src="../assets/Alnoda-white.svg"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            MkDocs MagicSpace
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              MkDocs-MagicSpace
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="orange" data-md-color-media="" data-md-color-primary="black" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22z"></path></svg>
+</label>
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="orange" data-md-color-media="" data-md-color-primary="black" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" data-md-state="active" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</label>
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
+</button>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/bluxmit/alnoda-workspaces" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-tabs__inner md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="..">
+      Home
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../about/intro/">
+        About
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../docs/">
+      Docs
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../tutorials/get-started/">
+        Tutorials
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="MkDocs MagicSpace" class="md-nav__button md-logo" data-md-component="logo" href="https://github.com/bluxmit/alnoda-workspaces" title="MkDocs MagicSpace">
+<img alt="logo" src="../assets/Alnoda-white.svg"/>
+</a>
+    MkDocs MagicSpace
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/bluxmit/alnoda-workspaces" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
+        Home
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2">
+        About
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="About" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../about/intro/">
+        Intro
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../about/motivation/">
+        Motivation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../about/features/">
+        Features
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="mkdocs/showcase/">
+        Showcase
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../docs/">
+        Docs
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
+        Tutorials
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Tutorials" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Tutorials
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/get-started/">
+        Get started
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/appearance/">
+        Change appearance
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" id="__nav_4_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_3">
+        Extended Markdown
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Extended Markdown" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_3">
+<span class="md-nav__icon md-icon"></span>
+          Extended Markdown
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/markdown/intro/">
+        Intro
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/markdown/basics/">
+        Start with the basics
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/markdown/hack-markdown/">
+        Hack the markdown
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/markdown/improve-readability/">
+        Improve readability with tabs, lists and footnotes
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/markdown/tables/">
+        Create tables
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/markdown/highlight-what-matters/">
+        Highlight with blockquotes and admonitions
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/markdown/classy-markdown/">
+        Make it classy with emoji, icons and more
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/markdown/images/">
+        Make images awesome
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/markdown/add-the-code/">
+        Add the code
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/markdown/formulas/">
+        Write formulas
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/markdown/diagrams/">
+        Draw diagrams
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/markdown/templates-macros/">
+        Use templates
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" id="__nav_4_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_4">
+        Extra features
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Extra features" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_4">
+<span class="md-nav__icon md-icon"></span>
+          Extra features
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/extra-features/include/">
+        Include docs from other repositories
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" id="__nav_4_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_5">
+        Get website online
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Get website online" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_5">
+<span class="md-nav__icon md-icon"></span>
+          Get website online
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/get-online/build/">
+        Build
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/get-online/serve-workspace/">
+        Serve Workspace
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#try-it-out">
+    Try it out
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#contents">
+    Contents
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#use-cases">
+    Use-cases
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#why-documentation-websites">
+    Why documentation websites
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#features">
+    Features
+  </a>
+<nav aria-label="Features" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-technology-behind">
+    The technology behind
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#launch-workspace">
+    Launch Workspace
+  </a>
+<nav aria-label="Launch Workspace" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#workspace-terminal">
+    Workspace terminal
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#multiple-workspaces">
+    Multiple workspaces
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#open-more-ports">
+    Open more ports
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#docker-in-docker">
+    Docker in docker
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#run-on-remote-server">
+    Run on remote server
+  </a>
+<nav aria-label="Run on remote server" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#unsecure-remote-workspace">
+    Unsecure remote workspace
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#secure-remote-workspace">
+    Secure remote workspace
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#use-workspace">
+    Use Workspace
+  </a>
+<nav aria-label="Use Workspace" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#install-applications">
+    Install applications
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#schedule-jobs-with-cron">
+    Schedule jobs with Cron
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#python">
+    Python
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#nodejs">
+    Node.js
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#run-applications-and-services-inside-the-workspace">
+    Run applications and services inside the workspace
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#manage-workspaces">
+    Manage workspaces
+  </a>
+<nav aria-label="Manage workspaces" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#start-and-stop-workspaces">
+    Start and stop workspaces
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#create-new-workspace-image">
+    Create new workspace image
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#manage-workspace-images">
+    Manage workspace images
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#save-and-load-workspace-images">
+    Save and load workspace images
+  </a>
+<nav aria-label="Save and load workspace images" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#save-workspace-in-a-file">
+    Save workspace in a file
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#push-workspace-to-a-registry">
+    Push workspace to a registry
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#move-workspace-to-the-cloud">
+    Move workspace to the cloud
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="mkdocs-magicspace">MkDocs-MagicSpace</h1>
+<p>MkDocs-MagicSpace is an all-in-one tool, carefully crafted to develop, build and serve awesome static websites, for the purpose 
+of documentation, tutorials, and training.  </p>
+<h4 id="try-it-out">Try it out</h4>
+<div class="highlight"><pre><span></span><code>docker run --name space-1 -d -p 8020-8035:8020-8035 alnoda/mkdocs-magicspace
+</code></pre></div>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#use-cases">Use-cases</a></li>
+<li><a href="#why-documentation-websites">Why documentation websites</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#the-technology-behind">The technology behind</a></li>
+<li><a href="#launch-workspace">Launch Workspace</a><ul>
+<li><a href="#workspace-terminal">Workspace terminal</a></li>
+<li><a href="#multiple-workspaces">Multiple workspaces</a></li>
+<li><a href="#open-more-ports">Open more ports</a></li>
+<li><a href="#docker-in-docker">Docker in docker</a></li>
+<li><a href="#run-on-remote-server">Run on remote server</a></li>
+</ul>
+</li>
+<li><a href="#use-workspace">Use Workspace</a><ul>
+<li><a href="#install-applications">Install applications</a></li>
+<li><a href="#schedule-jobs-with-cron">Schedule jobs with Cron</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#node.js">Node.js</a></li>
+<li><a href="#run-applications-and-services-inside-the-workspace">Run applications and services inside the workspace</a></li>
+</ul>
+</li>
+<li><a href="#manage-workspaces">Manage workspaces</a><ul>
+<li><a href="#start-and-stop-workspaces">Start and stop workspaces</a></li>
+<li><a href="#create-new-workspace-image">Create new workspace image</a></li>
+<li><a href="#manage-workspace-images">Manage workspace images</a></li>
+<li><a href="#save-and-load-workspace-images">Save and load workspace images</a></li>
+<li><a href="#move-workspace-to-the-cloud">Move workspace to the cloud</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="use-cases">Use-cases</h2>
+<p>With the help of MkDocs-MagicSpace you can develop, build and serve the following kinds of websites:</p>
+<ol>
+<li>
+<p>Awesome looking docs for your open-source project. Use HTML &amp; CSS to create front page and markdown for doc pages.</p>
+</li>
+<li>
+<p>User manuals and API docs. While enterprise docs are for internal use, create great-looking API websites for your users, and manuals for your customers.</p>
+</li>
+<li>
+<p>Enterprise documentation websites that unite numerous git repositories into one documentation project.</p>
+</li>
+<li>
+<p>Tutorials and training websites. Do you have a lot of experience in something? Share it with the world. 
+MkDocs-MagicSpace helps you to highlight the code in many programming languages, write complex mathematical formulas, 
+<a href="(https://mermaid-js.github.io/mermaid/#/)">draw diagrams</a> and so much more!</p>
+</li>
+<li>
+<p>With MkDocs-MagicSpace you can also create books, booklets, and brochures as .pdf files.  </p>
+</li>
+</ol>
+<p>One of the most convenient features of the MkDocs-MagicSpace - is that it is a workspace in docker. 
+You use it on your local machine, you can run it on the remote server and collaborate with your colleagues, 
+you can give it to your peer as a whole. And you can use it to serve your docs from any server, no matter 
+if it is public or inside the company's VPN.</p>
+<h2 id="why-documentation-websites">Why documentation websites</h2>
+<p><em>Why create separate documentation websites? Why not just write Git readme files?</em></p>
+<ul>
+<li>MkDocs website with beautiful themes looks much better than any readme file. The resulting documentation website looks professional and awesome.</li>
+<li>MkDocs adds text search to your documentation website.</li>
+<li>In the case of closed-source software, sharing readme files from the git repository with external users is not an option.</li>
+<li>Github does not render beautiful extended markdown features like admonitions, tabs, etc. Neither renders diagrams, formulas, swagger docs, or notebooks.</li>
+<li>Using MkDocs-MagicSpace you create documentation from the same markdown readme files you have in your repo together with the code. And you 
+can create a unified documentation website from multiple repositories in Github, GitLab, Bitbucket.</li>
+<li>You can add such features as Google Analytics, multi-language localization.</li>
+</ul>
+<p><em>And what about Confluent?</em> </p>
+<p>The approach of having docs in different places (Git repositories, Confluent, Wiki, etc.) has serious drawbacks. It creates chaos, and documentation inevitably diverges with time.
+And you never know where to look for the information you need.</p>
+<p>The best docs live together with the code. With MkDocs-MagicSpace you can follow this practice with ease, build a documentation website 
+from one or many git repositories, include readme files that live close to the code. You can have a build process that even creates 
+auto-documentation directly from the code. </p>
+<h2 id="features">Features</h2>
+<p>MkDocs-MagicSpace has <a href="https://squidfunk.github.io/mkdocs-material/"><strong>MkDocs</strong></a> installed with a collection of extensions and plugins 
+that bring MkDocs to the next level. </p>
+<p>MkDocs-MagicSpace is an extension of the <a href="https://github.com/Alnoda/workspaces-in-docker/blob/main/workspaces/workspace-in-docker/README.md">workspace-in-docker</a> 
+and has all its features:</p>
+<ul>
+<li><strong>Workspace UI</strong> - launch all workspace tools from one place.</li>
+<li><a href="https://theia-ide.org/docs/"><strong>Eclipse Theia</strong></a> - open source version of popular Visual Studio Code IDE. Theia is trully open-source, has 
+VS-Code extensions and works in browser. This means it can run inside a docker container on local machine or in cloud.</li>
+<li><a href="https://github.com/filebrowser/filebrowser"><strong>FileBrowser</strong></a>  - manage files and folders inside the workspace, and exchange data between local environment and the workspace</li>
+<li><a href="https://github.com/jhuckaby/Cronicle"><strong>Cronicle</strong></a>  - task scheduler and runner, with a web based front-end UI. It handles both scheduled, repeating and on-demand jobs, targeting any number of worker servers, with real-time stats and live log viewer.</li>
+<li><a href="https://github.com/vercel/serve"><strong>Static File Server</strong></a> - view any static html sites as easy as if you do it on your local machine. Serve static websites easily.</li>
+<li><a href="https://github.com/FredrikNoren/ungit"><strong>Ungit</strong></a> - rings user friendliness to git without sacrificing the versatility of it.</li>
+<li><a href="https://midnight-commander.org/"><strong>Midnight Commander</strong></a>  - Feature rich visual file manager with internal text viewer and editor. </li>
+<li><a href="https://htop.dev/"><strong>Process Monitor</strong></a>  - Monitor running process and resource utilization. </li>
+</ul>
+<p>Built on top of Base-workspace and Ubuntu-workspace, this workspace gets all the features those workspaces have. 
+In particular, workspace-in-docker provides excellent experience when working directly in the terminal, and has docker-in-docker.</p>
+<h4 id="the-technology-behind">The technology behind</h4>
+<p>MkDocs-MagicSpace in its essense is all about <a href="https://www.mkdocs.org/"><strong>MkDocs</strong></a> -  a fast, simple and downright gorgeous static site generator that's geared towards 
+building project documentation. </p>
+<p>MkDocs has many themes, MkDocs-MagicSpace has <a href="https://squidfunk.github.io/mkdocs-material/"><strong>Material for MkDocs</strong></a> set up and configured by default. 
+It is one of the best themes for MkDocs, which makes your website look very professional. This theme is extremely customizable, 
+searchable, mobile-friendly, has 40+ languages, has built-in search. It also adds lots of markdown features such as tabbed content containers, mathematical formulas, critic markup, 
+task lists, and more than 10k icons and emojis.</p>
+<p>MkDocs-MagicSpace has lots of packages and extensions already installed: </p>
+<ul>
+<li><a href="https://facelessuser.github.io/pymdown-extensions/">PyMdown Extensions</a> - add even more cool features of the extended markdown: sub- and superscripts, keys, magic links, sane headers etc.</li>
+<li><a href="https://mkdocs-macros-plugin.readthedocs.io/en/latest/">Mkdocs-macro plugin</a> - add variables and macros written in Python!</li>
+<li><a href="https://backstage.github.io/mkdocs-monorepo-plugin/">Mkdocs-monorepo plugin</a> - build multiple documentation folders in a single Mkdocs. Designed for large codebases. </li>
+<li><a href="https://lyz-code.github.io/mkdocs-newsletter/">MkDocs Newsletter</a> - show the changes of documentation repositories in a user friendly format, at the same time that it's easy for the authors to maintain.</li>
+<li><a href="https://github.com/fralau/mkdocs-mermaid2-plugin">Mkdocs-mermaid2-plugin</a> - renders textual graph descriptions into Mermaid graphs (flow charts, sequence diagrams, pie charts, etc.).</li>
+<li><a href="https://pygments.org/">Pygments</a> - a generic syntax highlighter suitable for use in code hosting, forums, wikis or other applications that need to prettify source code, with over 500 languages and other text formats.</li>
+<li><a href="https://github.com/mondeja/mkdocs-include-markdown-plugin">Mkdocs-include-markdown-plugin</a> - include Markdown files completely or partially, and include files of any type.</li>
+<li><a href="">Mkdocs-table-reader-plugin</a> - directly insert CSV files as tables in your website.</li>
+</ul>
+<p><strong>(The complete list of installed packages - /home/abc/installed-python-packages/mkdocs-requirements.txt)</strong></p>
+<h2 id="launch-workspace">Launch Workspace</h2>
+<p>Workspaces - are merely docker containers, that's why managing workspaces is easy and intuitive - it is enough to know only docker commands, 
+no need to learn any new tools.</p>
+<p>In order to avoid confusion, the following convention is adopted: </p>
+<div class="highlight"><pre><span></span><code><span class="nb">command</span> to execute outside of the workspace
+</code></pre></div>
+<blockquote>
+<p><code>command to execute inside the workspace (after entering running docker container)</code></p>
+</blockquote>
+<p>To start a workspace simply execute in terminal</p>
+<div class="highlight"><pre><span></span><code>docker run --name space-1 -d -p <span class="m">8020</span>-8035:8020-8035 alnoda/mkdocs-magicspace
+</code></pre></div>
+<p><em>(It is recommended to run workspace in the daemon mode)</em></p>
+<p><strong><em>Open <a href="http://localhost:8020">http://localhost:8020</a></em></strong> </p>
+<p>Workspace has its own UI, which includes quiklaunch (home) page and documentation pages. 
+From the quiklaunch you can open any workspace tool. Documentation pages you modify in order 
+to document the project, workspace use and setup.  </p>
+<h3 id="workspace-terminal">Workspace terminal</h3>
+<p>There are several ways how to work with terminal of the the mkdocs-magicspace: </p>
+<ul>
+<li>built-it in-browser terminal</li>
+<li>use terminal provided by in-browser IDE <a href="http://localhost:8025">http://localhost:8025</a> (<a href="#multiple-workspaces">unless other ports are mapped</a>)</li>
+<li>ssh into the running the docker container (of the workspace) from your terminal</li>
+</ul>
+<p align="center">
+<img alt="Base-Workspace terminal" src="https://raw.githubusercontent.com/bluxmit/alnoda-workspaces/main/workspaces/base-workspace/img/base-workspace-terminal.gif" width="500"/>
+</p>
+<p><em>(Browser-based terminals always work under the user you started the workspace with, the default is non root user "abc")</em></p>
+<p>If you want to enter running workspace container from your terminal execute:
+<div class="highlight"><pre><span></span><code>docker <span class="nb">exec</span> -it space-1 /bin/zsh
+</code></pre></div></p>
+<p>If you don't want to use z-shell
+<div class="highlight"><pre><span></span><code>docker exec -it space-1 /bin/bash
+</code></pre></div></p>
+<p>This way allows to ssh into the workspace as a root user at any time, even if the workspace itself was not starter as root user (the default user is abc)</p>
+<div class="highlight"><pre><span></span><code>docker <span class="nb">exec</span> -it --user<span class="o">=</span>root space-1 /bin/zsh
+</code></pre></div>
+<p>You can work in Ubuntu terminal now. Execute the followinng command to know your workspace user </p>
+<blockquote>
+<p><code>whoami</code></p>
+</blockquote>
+<h3 id="multiple-workspaces">Multiple workspaces</h3>
+<p>Every workspace requires range of ports. If one workspace is up and running, the ports 8020-8035 are taken.   </p>
+<p>mkdocs-magicspace itself uses 9 ports (8020-8028), but it is recommended to map several extra ports just in case. Having extra ports, 
+you can always launch new applications on these ports, and they will be immediately exposed outside of the workspace.  </p>
+<p>In order to start another workspace, you either need to stop currently runnning workspace, or to run another workspace 
+on the different port range.  </p>
+<p>If you are planning to run more than one workspace at the same time, you can run another workspace with 
+the different port range, for example</p>
+<div class="highlight"><pre><span></span><code>docker run --name space-2 -d -p <span class="m">8040</span>-8055:8020-8035 -e <span class="nv">ENTRY_PORT</span><span class="o">=</span><span class="m">8040</span> alnoda/mkdocs-magicspace
+</code></pre></div>
+<p>Notice that in addition we need to set environmental variable ENTRY_PORT, which should be equal to the first port in the new range. 
+Workspace UI usues this variable to know the new port range, and redirects to the proper addresses of the workspace applications' UIs.</p>
+<h3 id="open-more-ports">Open more ports</h3>
+<p>We started workspace container with a port range mapped "-p 8020-8035". If you are planning to expose more applications 
+from inside of a container, add additional port mapping, for example</p>
+<p><div class="highlight"><pre><span></span><code>docker run --name space-1 -d -p <span class="m">8020</span>-8035:8020-8035 -p <span class="m">8080</span>:8080 alnoda/mkdocs-magicspace
+</code></pre></div>
+You can add multiple port mappings:
+<div class="highlight"><pre><span></span><code>docker run --name space-1 -d -p <span class="m">8020</span>-8035:8020-8035 -p <span class="m">8080</span>:8080 -p <span class="m">443</span>:443 alnoda/mkdocs-magicspace
+</code></pre></div></p>
+<p><strong>NOTE:</strong> It is not a problem if you don't expose any ports, but later on realise you need them - 
+you will just create new image, and run it exposing the required port (look in the section <a href="#create-new-image">Create new image</a>) </p>
+<h3 id="docker-in-docker">Docker in docker</h3>
+<p>It is possible to work with docker directly from the workspace (using workspace terminal). </p>
+<div class="highlight"><pre><span></span><code>docker run --name space-1 -d -p 8020-8035:8020-8035 -v /var/run/docker.sock:/var/run/docker.sock alnoda/mkdocs-magicspace
+</code></pre></div>
+<p>NOTE: in order to use docker in docker you need to or enter into the workspace container as root
+<div class="highlight"><pre><span></span><code>docker <span class="nb">exec</span> -it --user<span class="o">=</span>root space-1 /bin/zsh
+</code></pre></div></p>
+<h3 id="run-on-remote-server">Run on remote server</h3>
+<p>Because workspace is just a docker image, running it in any other server is as easy as running it on local laptop.  </p>
+<p>Running on remote server makes it much simpler to collaborate, because you can just share credentials to the workspace with your peers, and they will be able to use it. 
+You can also run applications that should run permanently, and run jobs on schedule.  </p>
+<h4 id="unsecure-remote-workspace">Unsecure remote workspace</h4>
+<p>The simplest deployment of the workkspace requires only 3 steps:</p>
+<ul>
+<li>get virtual server on your favourite cloud (Digital Ocean, Linode, AWS, GC, Azure ...) </li>
+<li><a href="https://docs.docker.com/engine/install/">install docker</a> on this server</li>
+<li>ssh to the remote server and start workspace </li>
+</ul>
+<div class="highlight"><pre><span></span><code>docker run --name space-1 -d -p 8020-8035:8020-8035 -e WRK_HOST="&lt;ip-of-your-remote-server&gt;" alnoda/mkdocs-magicspace
+</code></pre></div>
+<p><strong>NOTE:</strong> When running workspace on the remote server, add envronmental variable <code>-e WRK_HOST="&lt;ip-of-your-remote-server&gt;"</code>. 
+Workspace UI needss this variable to know how redirect properly to the workspace applications' UIs.</p>
+<p>Open in your browser <code>&lt;ip-of-your-remote-server&gt;:8020</code> </p>
+<p>If docker-in-docker is required, then </p>
+<div class="highlight"><pre><span></span><code>docker run --name space-1 -d -p 8020-8035:8020-8035 -e WRK_HOST="&lt;ip-of-your-remote-server&gt;" -v /var/run/docker.sock:/var/run/docker.sock alnoda/mkdocs-magicspace
+</code></pre></div>
+<p>This way launches workspace in cloud, but such workspace is not secure, everyone who knows IP of your server will be able to use it.  </p>
+<h4 id="secure-remote-workspace">Secure remote workspace</h4>
+<p><em>You might want to restrict access to the workspace, and secure encrypted communication with the workspace</em> </p>
+<p>Kkdocs-MagicSpace contains utility that will generate everything needed to launch the workspace in cloud in a secure way, with authentication and with TLS.  </p>
+<p>If you want to run workspace on the remote server securely, start mkdocs-magicspace on your local laptop first, open its terminal and 
+use utility <code>/home/abc/utils/remote.py</code> to generate create docker-compose project with TLS certificates. Simply execute</p>
+<blockquote>
+<p><code>python /home/abc/utils/remote.py --workspace="mkdocs-magicspace" --port="8020" --host="68.183.69.198" --user="user1" --password="pass1"</code> </p>
+</blockquote>
+<p><strong>NOTE:</strong> you have to specify the correct host (IP of the server you want to run the workspace on), and user and password of your choice.  </p>
+<p>You see folder <code>/home/abc/utils/remote</code> is created. Copy this folder to the remote server (any location). Ssh to the server, cd into 
+the directory you copied and execute <code>docker-compose up -d</code>.  </p>
+<p>That's it, you workspace is running securely on the remote server, using 
+self-signed TLS certificates for encrypted https communication between you laptop and the remote workspace, 
+and authentication is added. </p>
+<h2 id="use-workspace">Use Workspace</h2>
+<p>Among the common actions you'd do in the workspace are</p>
+<ul>
+<li>installation of new applications and runtimes </li>
+<li>edit files, write code, scripts</li>
+<li>build, compile and execute code </li>
+<li>start/stop applications and services</li>
+<li>schedule tasks and scripts</li>
+<li>process data</li>
+</ul>
+<h3 id="install-applications">Install applications</h3>
+<p>Use workspace workspace terminal to install new applications. 
+Install with <code>sudo apt install</code>. The default <em>abc</em> user is allowed to install packages.  </p>
+<p>For example, in order to install <a href="https://www.gnu.org/software/emacs/">Emacs text editor</a> open workspace terminal, and execute </p>
+<blockquote>
+<p><code>sudo apt install emacs</code></p>
+</blockquote>
+<h3 id="schedule-jobs-with-cron">Schedule jobs with Cron</h3>
+<p>Schedule execution of any task with cron - a time-based job scheduler in Unix-like computer operating systems.   </p>
+<p>Open workspace terminal, and execute</p>
+<blockquote>
+<p><code>crontab -e</code></p>
+</blockquote>
+<p><em>(chose [1] nano as editor on the first time)</em>
+In the end of the opened file add line  </p>
+<blockquote>
+<p><code>* * * * * echo $(whoami) &gt;&gt; /home/cron.txt</code></p>
+</blockquote>
+<p>This will print every minute username to file <em>/home/cron.txt</em> . <em>(Hit Ctrl+X to exit nano)</em></p>
+<p>Hint: example of cron job definition: <br/>
+<div class="highlight"><pre><span></span><code>.---------------- minute (0 - 59)   
+|  .------------- hour (0 - 23)
+|  |  .---------- day of month (1 - 31)
+|  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+|  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+|  |  |  |  |
+*  *  *  *  *  command to be executed
+</code></pre></div></p>
+<p><strong>NOTE</strong> you can disconnect from the image and close terminal - cron will continue working.</p>
+<blockquote>
+<p>Instead of cron you might want to use Cronicle - a tool with Web UI, and a great list of features 
+that will provide you with the dashboard, list of executions and statistics, even let you ser limis 
+on resources for each jobs, and create depenndencies between jobs.</p>
+</blockquote>
+<h3 id="python">Python</h3>
+<p>Python and Pip are installed. To use python console, open workspace terminal and execute </p>
+<blockquote>
+<p><code>python</code></p>
+</blockquote>
+<p>install python package with pip, for </p>
+<blockquote>
+<p><code>pip install pandas</code></p>
+</blockquote>
+<p>If you are planning to work with python, we recommend to install IPython, that provides a rich toolkit to help 
+you make the most of using Python interactively. Install and start ipython</p>
+<blockquote>
+<p><code>pip install ipython</code><br/>
+<code>ipython</code></p>
+</blockquote>
+<h3 id="nodejs">Node.js</h3>
+<p>We recommend to use nodeenv to create different node environments.  </p>
+<p>For example, open workspace terminal, create folder npmgui, and activate environment with node v. 12.18.3 and npm v.6.0.0</p>
+<blockquote>
+<p><code>cd /home</code><br/>
+<code>mkdir npmgui; cd npmgui</code><br/>
+<code>nodeenv --node=12.18.3 --npm=6.0.0 env</code></p>
+</blockquote>
+<p>Let's install package and start node application </p>
+<blockquote>
+<p><code>. env/bin/activate &amp;&amp; npm i -g npm-gui</code> <br/>
+<code>npm-gui 0.0.0.0:8030</code></p>
+</blockquote>
+<p>Open your browser on http://localhost:8030/ </p>
+<p><strong>NOTE:</strong> If you close terminal, the application will stop. See how to <a href="#run-applications-and-services-inside-the-workspace">start applications that reamin live after closing a workspace terminal</a></p>
+<h3 id="run-applications-and-services-inside-the-workspace">Run applications and services inside the workspace</h3>
+<p>If you want application to keep running after workspace terminal is closed start it with <strong>"&amp;!"</strong> at the end. </p>
+<p>For example, in the last section we started <em>npm-gui</em> tool with command <code>npm-gui 0.0.0.0:8030</code>. If you close the workspace terminal, 
+this application witll stop running. To keep it running after terminal is closed, execute</p>
+<blockquote>
+<p><code>npm-gui 0.0.0.0:8030 &amp;!</code> </p>
+</blockquote>
+<p>Now, if you disconnect from the workspace and close terminal, the application will continue running in the workspace, untill <a href="#start-and-stop-workspaces">workspace is stopped</a>.   </p>
+<h2 id="manage-workspaces">Manage workspaces</h2>
+<p>Workspace is just a docker container. You can start, stop, delete and do anything you can do with docker images and containers.    </p>
+<p>There are two concepts to keep in mind: <strong>images</strong> and <strong>containers</strong>. Images are workspace blueprints. For example, <strong>alnoda/mkdocs-magicspace</strong> - 
+is an image. When you execute this command </p>
+<p><div class="highlight"><pre><span></span><code>docker run --name space-1 -d -p <span class="m">8020</span>-8035:8020-8035 alnoda/mkdocs-magicspace
+</code></pre></div>
+you create container called <strong>space-1</strong> from the image <strong>alnoda/mkdocs-magicspace</strong>. You can create any number of containers, but you need to 
+<a href="#multiple-workspaces">map different ports to each of them</a>.  </p>
+<p>Container - is your workspace. You can start, stop and delete them. You can run multiple workspace containers at the same time, or work with 
+one workspace at a time.   </p>
+<p>From the workspace (which is a container) you can create new image. This is called <strong>commit docker image</strong>. 
+Essentially, this means <em>"take my workspace and create new image with all the changes I've done in my workspace</em>"</p>
+<h3 id="start-and-stop-workspaces">Start and stop workspaces</h3>
+<p>The workspace started in daemon mode will continue working in the background. </p>
+<p>See all the running docker containers</p>
+<div class="highlight"><pre><span></span><code>docker ps
+</code></pre></div>
+<p>Stop workspace</p>
+<p><div class="highlight"><pre><span></span><code>docker stop space-1 
+</code></pre></div>
+Workspace is stopped. All the processes and cron jobs are not running. </p>
+<p>See all docker conntainers, including stopped</p>
+<div class="highlight"><pre><span></span><code>docker ps -a
+</code></pre></div>
+<p>Start workspace again. Processes and cron jobs are resumed. </p>
+<div class="highlight"><pre><span></span><code>docker start space-1 
+</code></pre></div>
+<p>Delete workspace container (all work will be lost)</p>
+<div class="highlight"><pre><span></span><code>docker rm space-1 
+</code></pre></div>
+<h3 id="create-new-workspace-image">Create new workspace image</h3>
+<p>Having made changes, you can commit them creating new image of the workspace. In order to create new workspace image with the 
+name "space-image" and version "0.2" execute</p>
+<div class="highlight"><pre><span></span><code>docker commit space-1 space-image:0.2
+</code></pre></div>
+<p>Run new workspace with </p>
+<div class="highlight"><pre><span></span><code>docker run --name space2 -d space-image:0.2
+</code></pre></div>
+<p>The new workspace accommodates all the changes that you've made in your space-1. Hence you can have versions of your workspaces. 
+Create different versions before the important changes.</p>
+<h3 id="manage-workspace-images">Manage workspace images</h3>
+<p>See all docker images</p>
+<div class="highlight"><pre><span></span><code>docker images
+</code></pre></div>
+<p>Delete workspace image entirely</p>
+<div class="highlight"><pre><span></span><code>docker rmi -f alnoda/mkdocs-magicspace
+</code></pre></div>
+<p><strong>NOTE:</strong> you cannot delete image if there is a running container created from it. Stop container first.</p>
+<h3 id="save-and-load-workspace-images">Save and load workspace images</h3>
+<p>After you commit workspace container, and create new image out of it, you can push it to your docker registry or save it in a file.  </p>
+<h4 id="save-workspace-in-a-file">Save workspace in a file</h4>
+<p>Assuming you created new image <strong>space-image:0.4</strong> from your workspace, you can save it as a tar file </p>
+<div class="highlight"><pre><span></span><code>docker save space-image:0.4 &gt; space-image-0.4.tar
+</code></pre></div>
+<p>We can delete the image with</p>
+<div class="highlight"><pre><span></span><code>docker rmi -f space-image:0.4
+</code></pre></div>
+<p>And restore it from the tar file</p>
+<div class="highlight"><pre><span></span><code>docker load &lt; space-image-0.4.tar
+</code></pre></div>
+<h4 id="push-workspace-to-a-registry">Push workspace to a registry</h4>
+<p>A better way to manage images is docker registries. You can use docker registries in multiple clouds. They are cheap annd very convenient.<br/>
+Check out for example, <a href="https://www.digitalocean.com/products/container-registry/">Registry in DigitalOcean</a> or in <a href="https://www.scaleway.com/en/container-registry/">Scaleway container registry</a>. There are more.   </p>
+<p>Pushing image to registry is merely 2 extra commands: 1) tag image; 2) push image   </p>
+<p>You will be able to pull image on any device, local or cloud.</p>
+<h3 id="move-workspace-to-the-cloud">Move workspace to the cloud</h3>
+<p>Ease of running workspace in cloud, and ability to move workspaces between local machine and remote server  - 
+is one of the main features of the workspace, and the reasonn why the workspace is entirely in docker.  </p>
+<p>It is often a case that experiment, which started on personal notebook require more computational 
+resources, must be running for a long period of time, or executed periodically. All of these cases are 
+the reasons to move a workspace to the cloud server. Usually it is a hassle, but this workspace can be moved 
+to the remote server easily.    </p>
+<p>The easiest way to move workspace to the cloud is to get your private docker registry. Then moving a workspace from a laptop to 
+a remote server is only 3 commands:</p>
+<ol>
+<li><a href="#create-new-workspace-image">Commit workspace to the a image</a></li>
+<li><a href="https://docs.docker.com/engine/reference/commandline/push/">Push workspace to your docker registry</a></li>
+<li>ssh to remote server, and <a href="#run-on-remote-server">run workspace there</a> </li>
+</ol>
+<p>If you don't want to use container registry, then there are 2 steps more involved:</p>
+<ol>
+<li><a href="#create-new-workspace-image">Commit workspace to the a image</a></li>
+<li><a href="save-and-loa-images">Save image to file</a> </li>
+<li>Copy file to remote server. There are many options:<ul>
+<li>Launch filexchange workspace on the remote server </li>
+<li>Use <a href="https://cyberduck.io/">cyberduck</a> </li>
+<li>use <a href="https://linuxize.com/post/how-to-use-scp-command-to-securely-transfer-files/">scp</a></li>
+</ul>
+</li>
+<li><a href="#save-and-load-workspace-images">Load workspace image from file</a> on the remote server </li>
+<li><a href="#run-on-remote-server">Start workspace on the remote server</a> </li>
+</ol>
+</article>
+</div>
+</div>
+<a class="md-top md-icon" data-md-component="top" data-md-state="hidden" href="#" title="Back to top">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path></svg>
+</a>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: None" class="md-footer__link md-footer__link--prev" href="../about/motivation/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              None
+            </div>
+</div>
+</a>
+<a aria-label="Next: None" class="md-footer__link md-footer__link--next" href="mkdocs/showcase/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              None
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+          Material for MkDocs
+        </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+<script src="../assets/javascripts/bundle.82b56eb2.min.js"></script>
+<script src="../javascripts/config.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</body>
+</html>
