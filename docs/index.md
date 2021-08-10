@@ -204,42 +204,42 @@ docker run --name project-1 -d -p 8020-8030:8020-8030 alnoda/mkdocs-magicspace
         {
             "env": "VSCODE_URL",
             "name": "VS-code IDE",
-            "image": "IDE.png",
+            "image": "index/IDE.png",
             "description": "Browser-based version of Visual Studio Code. Develop in any language, install hundreeds of extensions",
             "local_port": "3000"
         },
         {
             "env": "FILEBROWSER_URL",
             "name": "File Browser",
-            "image": "Filebrowser.png",
+            "image": "index/Filebrowser.png",
             "description": "Browse, upload and download files and folders to and from the Workspace",
             "local_port": "8092"
         },
         {
             "env": "CRONICLE_URL",
             "name": "Cronicle",
-            "image": "Cronicle.png",
+            "image": "index/Cronicle.png",
             "description": "Schedule jobs, manage schedules, observe and monitor executions of tasks",
             "local_port": "3012"
         },
         {
             "env": "UNGIT_URL",
             "name": "Ungit",
-            "image": "Ungit.png",
+            "image": "index/Ungit.png",
             "description": "Manage Git repositories and workflows using beautiful UI",
             "local_port": "8448"
         },
         {
             "env": "STATICFS_URL",
             "name": "Static File Server",
-            "image": "Static-server.png",
+            "image": "index/Static-server.png",
             "description": "Serve any static websites like a breeze",
             "local_port": "9992"
         },
         {
             "env": "TERMINAL_URL",
             "name": "Terminal",
-            "image": "terminal-big.png",
+            "image": "index/terminal-big.png",
             "description": "Full-fledged browser-based terminal with Z-shell",
             "local_port": "9992"
         }
@@ -326,49 +326,49 @@ docker run --name project-1 -d -p 8020-8030:8020-8030 alnoda/mkdocs-magicspace
 
 <div class="accent-section" >
     <div class="accent-element" >
-        <img src="programming.svg" class="accent-img">
+        <img src="index/programming.svg" class="accent-img">
         <div class="accent-description">
             Isolate projects in their dockerized environments, work directly inside the running docker containers, and manage numerous projects easily
         </div>
     </div>
     <div class="accent-element" >
-        <img src="nature-coding.svg" class="accent-img">
+        <img src="index/nature-coding.svg" class="accent-img">
         <div class="accent-description">
             Move entire workspaces between machines and cloud servers with just a couple of commands. Work on your laptop, home PC, cloud server, or even tablet whenever you want  
         </div>
     </div>
     <div class="accent-element" >
-        <img src="shared-workspace.svg" class="accent-img">
+        <img src="index/shared-workspace.svg" class="accent-img">
         <div class="accent-description">
             Share the entire workspace with all dependencies with your peers. Or launch a workspace on a cloud server and work together online
         </div>
     </div>
     <div class="accent-element" >
-        <img src="version-control.svg" class="accent-img">
+        <img src="index/version-control.svg" class="accent-img">
         <div class="accent-description">
             Version control not only for the code but for your entire workspace with all the files and configurations. Save workspace that works
         </div>
     </div>
     <div class="accent-element" >
-        <img src="design-components.svg" class="accent-img">
+        <img src="index/design-components.svg" class="accent-img">
         <div class="accent-description">
             Much more than just an IDE. All the needed tools, packages, extensions are set up and configured. Workspace is fully ready to serve the goal
         </div>
     </div>
     <div class="accent-element" >
-        <img src="data-processing.svg" class="accent-img">
+        <img src="index/data-processing.svg" class="accent-img">
         <div class="accent-description">
             Great for both development and production. No additional steps are needed. Just move the same workspace to the cloud, and use it as a runtime environment
         </div>
     </div>
     <div class="accent-element" >
-        <img src="add-color.svg" class="accent-img">
+        <img src="index/add-color.svg" class="accent-img">
         <div class="accent-description">
             Isolate experiments from the main environment. Trying out new things without affecting your primary workspace
         </div>
     </div>
     <div class="accent-element" >
-        <img src="feeling-proud.svg" class="accent-img">
+        <img src="index/feeling-proud.svg" class="accent-img">
         <div class="accent-description">
             Tunable, expandable, and customizable. Configure your own professional workspace with all the things you need, and reuse it in many different projects
         </div>

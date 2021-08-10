@@ -49,7 +49,7 @@ docker push alnoda/mkdocs-magicspace-website
 2. Generate `docker-compose.yml` using the workspace running on laptop
 
 ```
-python /home/abc/utils/staticserver.py --image="alnoda/mkdocs-magicspace-website" --domain="mkdocs-magicspace.alnoda.org" --email="bluxmit@gmail.com" --homepage="docs/pages/home/home/"
+python /home/abc/utils/staticserver.py --image="alnoda/mkdocs-magicspace-website" --domain="mkdocs-magicspace.alnoda.org" --email="bluxmit@gmail.com" --homepage="docs/"
 ```
 
 3. Ssh to the cloud server, and create `docker-compose.yml`

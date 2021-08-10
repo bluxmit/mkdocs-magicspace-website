@@ -35,15 +35,7 @@ This is how it looks on [name.com](https://name.com)
 
 ![Placeholder](img/add-a-record.png){style="height: 100%; width: 100%; border-radius: 5px; margin-left: auto; margin-right: auto; display: block;" loading=lazy}
 
-
-## Deploy
-
-In order to deploy documentation website with Mkdocs-MagicSpace you will need to perform only the following 2 steps:
-
-1. Get workspace image on the cloud server
-2. Launch workspace in production
-
-### Get workspace image on the cloud server
+## Create docker image from workspace
 
 Commiting workspace - is creating a new docker image from your workspace with all the work and changes you've done in this workspace. 
 After image is created, you will be able to create many copies of your workspace from this image. You can also create different 
@@ -58,6 +50,44 @@ docker commit space-1 ready-website:0.1
 
 where *0.1* is a version.  
 
+This image can already be used to deploy and serve static website. But it is not optimal: we only need static server to run and serve the website, 
+and workspace starts many applications, including IDE, Cronicle, Filebrowser and other. We will delete those applications in the final image.  
+
+Create Dockerfile
+
+```
+FROM ready-website:0.1
+
+USER root
+
+RUN rm -rf /home/project
+RUN rm -rf /opt/cronicle
+RUN rm -rf /opt/filebrowser
+RUN rm -rf /opt/theia
+RUN rm -rf /opt/ungit
+
+RUN apt-get remove -y docker docker-engine docker.io containerd runc nano mc git gitflow ncdu
+
+USER abc
+
+```
+
+And make new more optimized image 
+
+```
+docker build -t ready-website:0.2 .
+```
+
+
+## Deploy
+
+In order to deploy documentation website with Mkdocs-MagicSpace you will need to perform only the following 2 steps:
+
+1. Get workspace image on the cloud server
+2. Launch workspace in production
+
+### Get workspace image on the cloud server
+
 Unless you are already developing in the remote workspace on the same server you want to deploy your documentation website, 
 you will need to get the image of this workspace on the remote server. The best way - is to use private docker registry, that 
 you can buy from many docker registry providers and cloud services (you can buy it even on [hub.docker.com](https://hub.docker.com/) itself)   
@@ -69,14 +99,14 @@ you can buy from many docker registry providers and cloud services (you can buy 
 I've got a private registry on docker hub, called alnoda/ready-website, and pushing image to the registry is as easy as 
 
 ```
-docker tag ready-website:0.1 alnoda/ready-website:0.1
-docker push alnoda/ready-website:0.1
+docker tag ready-website:0.1 alnoda/ready-website:0.2
+docker push alnoda/ready-website:0.2
 ```
 
 On the colud server I simply login to the docker registry, and execute 
 
 ```
-docker pull alnoda/ready-website:0.1
+docker pull alnoda/ready-website:0.2
 ```
 
 Easy! Now workspace image with the documentation website is on the cloud server ready to be deployed.  
