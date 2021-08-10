@@ -3,10 +3,10 @@ MkDocs Workspace renders LaTeX math equations with [MathJax](https://docs.mathja
 
 ??? example "Showcase: formulas"
     === "Output"
-        --8<-- "docs/docs/markdown/snippets/mathjax-showcase.md"
+        --8<-- "docs/tutorials/markdown/snippets/mathjax-showcase.md"
     === "Markdown"
         ```
-        --8<-- "docs/docs/markdown/snippets/mathjax-showcase.md"
+        --8<-- "docs/tutorials/markdown/snippets/mathjax-showcase.md"
         ```
 
 ### Inline vs. block mode
@@ -306,10 +306,10 @@ In order to create system of quations use ```\begin{array}```, ```\end{array}```
 
 !!! example "System of equations"
     === "Output"
-        --8<-- "docs/docs/markdown/snippets/mathjax-system-equations.md"
+        --8<-- "docs/tutorials/markdown/snippets/mathjax-system-equations.md"
     === "Markdown"
         ```
-        --8<-- "docs/docs/markdown/snippets/mathjax-system-equations.md"
+        --8<-- "docs/tutorials/markdown/snippets/mathjax-system-equations.md"
         ```
 
 
@@ -339,10 +339,10 @@ End each matrix row with ```\\```, and separate matrix elements with ```&```
     ```
 !!! example "Advanced matrix notations"
     === "Output"
-        --8<-- "docs/docs/markdown/snippets/mathjax-matrices.md"
+        --8<-- "docs/tutorials/markdown/snippets/mathjax-matrices.md"
     === "Markdown"
         ```
-        --8<-- "docs/docs/markdown/snippets/mathjax-matrices.md"
+        --8<-- "docs/tutorials/markdown/snippets/mathjax-matrices.md"
         ```
 
     

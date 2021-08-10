@@ -1,10 +1,9 @@
-MkDocs-MagicSpace lets anyone develop, build and serve awesome documentation websites.  
-
+MkDocs-MagicSpace lets anyone develop, build and even serve awesome documentation websites. 
 MkDocs Workspace is made with :octicons-heart-fill-24:{ .heart }  It is free and open-source.
 
 ## Use-cases
 
-With the help of MkDocs-MagicSpace you can develop, build and serve the following kinds of websites:
+With the help of MkDocs-MagicSpace you can make different kinds of websites:
 
 - [X] Awesome looking docs for your open-source project. Use HTML & CSS to create front page and markdown for doc pages.
 

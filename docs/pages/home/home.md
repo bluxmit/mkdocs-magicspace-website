@@ -1,20 +1,17 @@
+---
+hide:
+- navigation
+- toc
+---
 <!-- ---------------------------------------- COMMON ---------------------------------------- -->
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto&display=swap');
 
-/* Remove TOC from this pge */
-.md-content__button {
-    display: none;
-}
 .md-typeset h1 {
     line-height: 0;
     margin: 0;
     margin-left: -9999px;
-}
-.md-sidebar {
-    display; none;
-    width: 0px;  
 }
 </style>
 

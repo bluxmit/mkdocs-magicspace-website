@@ -1,8 +1,8 @@
-MkDocs-MagicSpace is an all-in-one tool, carefully crafted to develop, build and serve awesome static websites, with a primary focus on documentation. 
-This workspace has everything needed to start right away.
+MkDocs-MagicSpace is an all-in-one tool, carefully crafted to create awesome static websites, 
+with a primary focus on documentation. This workspace has everything needed to start right away.
 
 !!! success ""
-    MkDocs Workspace is the one single tool for everything: development, building, deployment and serving your docs.   
+    You can use MkDocs Workspace on you local environment or in the cloud server.   
 
 ## Batteries Included
 
