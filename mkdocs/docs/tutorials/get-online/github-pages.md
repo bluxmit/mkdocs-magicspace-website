@@ -37,4 +37,22 @@ mkdocs/
     ...           # Other markdown pages, images and other files.
 ```
 
-Commit these changes, and push to GitHub.
+Commit these changes, and push to GitHub.  
+
+
+Open your GitHub repository page, and perform the following actions:
+
+- Under your repository name, click Settings
+
+![Placeholder](img/repo-actions-settings.png){style="height: 75%; width: 75%; border-radius: 5px; margin-left: auto; margin-right: auto; display: block;" loading=lazy}
+
+- In the left sidebar, click Pages
+
+![Placeholder](img/pages-tab.png){style="height: 50%; width: 50%; border-radius: 5px; margin-left: auto; margin-right: auto; display: block;" loading=lazy}
+
+- Select branch `master`, folder `docs/` and click `Save`
+
+![Placeholder](img/gh-pages-select.png){style="height: 75%; width: 75%; border-radius: 5px; margin-left: auto; margin-right: auto; display: block;" loading=lazy}
+
+That's it! Your website is online
+
