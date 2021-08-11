@@ -132,7 +132,7 @@ nav:
       - Extra features:
         - Include docs from other repositories: tutorials/extra-features/include.md 
       - Get website online: 
-        - Build: tutorials/get-online/build.md
+        - Build: tutorials/get-online/build-workspace.md
         - Publish on GitHub Pages: tutorials/get-online/github-pages.md
         - Serve Workspace: tutorials/get-online/serve-workspace.md
 
